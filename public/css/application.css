@@ -1,0 +1,75 @@
+.container {
+  margin: 50px auto;
+  width: 600px;
+  padding: 0px 20px 20px 20px;
+  border: 1px dotted black;
+  display: block;
+}
+th {
+  text-align: left;
+}
+
+form label, form input {
+  display: block;
+  text-align: center
+  margin: auto;
+}
+
+navbar a:hover, navbar a, navbar a:focus {
+  text-decoration: none !important;
+}
+navbar {
+  display: block;
+  margin: auto;
+  width: 65%;
+  background-color: white;
+  padding-right: 10px;
+  padding-left: 10px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  border-radius: 10px;
+}
+
+#go {
+  color: #4B515D;
+  font-size: 20px;
+}
+
+#fund {
+  color: #00C851;
+  font-size: 25px;
+}
+
+#me {
+  font-size: 20px;
+  color: #ffbb33;
+}
+
+#fundraiser {
+  font-size: 20px;
+  padding-right: 10px;
+  color: #00C851 !important;
+}
+
+#fundraiser a:hover {
+  text-decoration: none !important;
+}
+
+
+
+
+body {
+  background-color: #f5f5dc !important;
+}
+
+* {
+  font-family: 'Montserrat', sans-serif;
+}
+
+@media only screen and (max-width: 600px) {
+  navbar {
+    height: 100px;
+    width: 300px;
+    text-align: center;
+  }
+}
