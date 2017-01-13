@@ -55,11 +55,20 @@ navbar {
   text-decoration: none !important;
 }
 
-
-
-
 body {
   background-color: #f5f5dc !important;
+}
+
+.form-group, .col-form-label {
+  display: inline-block;
+}
+
+#username-login, #password-login {
+  width: 200px;
+}
+
+#login {
+
 }
 
 * {
@@ -72,4 +81,22 @@ body {
     width: 300px;
     text-align: center;
   }
+}
+
+div.well{
+  height: 250px;
+}
+
+.Absolute-Center {
+  margin: 180px auto auto auto;
+  position: absolute;
+  top: 0; left: 0; bottom: 0; right: 0;
+}
+
+.Absolute-Center.is-Responsive {
+  width: 50%;
+  height: 50%;
+  min-width: 200px;
+  max-width: 400px;
+  padding: 40px;
 }
