@@ -1,3 +1,14 @@
 <div class="container">
-
+  <% @posts.each_slice(2) do |slice| %>
+  <div class="row">
+    <% slice.each_with_index do |post, index| %>
+    <div class="col-lg-5 campaign-post">
+      <h4><%= post.title %></h4>
+    </div>
+    <% if index == 0 %>
+    <div class="col-lg-2 campaign-post"></div>
+    <% end %>
+    <% end %>
+  </div>
+  <% end %>
 </div>

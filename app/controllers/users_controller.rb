@@ -16,11 +16,24 @@ get '/sessions/new' do
 end
 
 post '/sessions' do
-
+  @user = User.find_by(username: params[:user][:username])
+  if @user
+    if @user.authenticate(params[:user][:username], params[:user][:password])
+      set_user(@user)
+      redirect '/'
+    else
+      @errors = ["Error: Username/Password is incorrect"]
+      erb :'/users/login'
+    end
+  else
+    @errors = ["Error: Account '#{params[:user][:username]}' not found"]
+    erb :'/users/login'
+  end
 end
 
 delete '/sessions' do
-
+  session.clear
+  redirect '/'
 end
 
 get '/users/:id' do

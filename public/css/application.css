@@ -30,6 +30,15 @@ navbar {
   border-radius: 10px;
 }
 
+#username-title {
+  padding-right: 10px;
+}
+
+.campaign-post {
+  height: 300px !important;
+
+}
+
 #go {
   color: #4B515D;
   font-size: 20px;
@@ -43,6 +52,19 @@ navbar {
 #me {
   font-size: 20px;
   color: #ffbb33;
+}
+
+.username-layout {
+  float: right;
+}
+
+.pipeline {
+  padding-right: 15px;
+  padding-left: 10px;
+}
+
+#logout-form {
+  display: inline;
 }
 
 
@@ -72,8 +94,12 @@ body {
   width: 200px;
 }
 
-#login {
+.register-button a:link {
+  text-decoration: none !important;
+}
 
+.register-button a:hover {
+  text-decoration: none !important;
 }
 
 * {
@@ -104,4 +130,22 @@ div.well{
   min-width: 200px;
   max-width: 400px;
   padding: 40px;
+}
+
+@media only screen and (max-width: 1199px) {
+  .col-lg-2{
+    display: none;
+  }
+
+  .campaign-post {
+    height: 200px;
+  }
+
+  .container {
+    margin: 50px auto;
+    width: 300px;
+    padding: 0px 20px 20px 20px;
+    border: 1px dotted black;
+    display: block;
+  }
 }
