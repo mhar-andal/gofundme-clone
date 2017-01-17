@@ -45,10 +45,15 @@ navbar {
   color: #ffbb33;
 }
 
+
 #fundraiser {
   font-size: 20px;
-  padding-right: 10px;
   color: #00C851 !important;
+  display: inline-block;
+}
+
+#profile-form {
+  display: inline-block;
 }
 
 #fundraiser a:hover {

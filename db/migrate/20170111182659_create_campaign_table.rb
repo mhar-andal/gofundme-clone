@@ -5,8 +5,8 @@ class CreateCampaignTable < ActiveRecord::Migration
       t.string :description
       t.string :location
       t.integer :creator_id
-      t.float :raised_money
       t.integer :target_goal
+      t.boolean :goal_met, default: false
 
       t.timestamps
     end
